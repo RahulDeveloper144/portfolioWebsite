@@ -1,0 +1,283 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Professional Website</title>
+
+    <!-- <link rel="stylesheet" href="style.css"> -->
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Arial;
+      }
+
+      body {
+        background: #f4f4f4;
+      }
+
+      /* Navbar */
+
+      .navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px 80px;
+        background: white;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+      }
+
+      .logo {
+        color: #2563eb;
+      }
+
+      .nav-links {
+        display: flex;
+        gap: 30px;
+        list-style: none;
+      }
+
+      .nav-links a {
+        text-decoration: none;
+        color: #333;
+        font-weight: 500;
+      }
+
+      .btn {
+        padding: 10px 20px;
+        background: #2563eb;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+
+      /* Hero */
+
+      .hero {
+        height: 90vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        background: linear-gradient(to right, #2563eb, #4f46e5);
+        color: white;
+        padding: 40px;
+      }
+
+      .hero h1 {
+        font-size: 50px;
+        margin-bottom: 20px;
+      }
+
+      .hero p {
+        font-size: 18px;
+        margin-bottom: 30px;
+      }
+
+      .hero-btn {
+        padding: 15px 35px;
+        border: none;
+        background: white;
+        color: #2563eb;
+        font-size: 16px;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+
+      /* Services */
+
+      .services {
+        padding: 80px 10%;
+        text-align: center;
+        background: white;
+      }
+
+      .services h2 {
+        margin-bottom: 40px;
+      }
+
+      .service-box {
+        display: flex;
+        gap: 30px;
+        justify-content: center;
+        flex-wrap: wrap;
+      }
+
+      .card {
+        background: #f9f9f9;
+        padding: 30px;
+        width: 280px;
+        border-radius: 10px;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+      }
+
+      .card h3 {
+        margin-bottom: 15px;
+      }
+
+      /* About */
+
+      .about {
+        padding: 80px 10%;
+        background: #2563eb;
+        color: white;
+        text-align: center;
+      }
+
+      .about p {
+        margin-top: 20px;
+        font-size: 18px;
+      }
+
+      /* Contact */
+
+      .contact {
+        padding: 80px 10%;
+        text-align: center;
+        background: white;
+      }
+
+      .contact form {
+        max-width: 500px;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+      }
+
+      .contact input,
+      .contact textarea {
+        padding: 12px;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+      }
+
+      .contact button {
+        padding: 12px;
+        background: #2563eb;
+        color: white;
+        border: none;
+        border-radius: 5px;
+      }
+
+      /* Footer */
+
+      footer {
+        background: #111;
+        color: white;
+        text-align: center;
+        padding: 20px;
+      }
+
+      /* Responsive */
+
+      @media (max-width: 768px) {
+        .navbar {
+          padding: 20px;
+        }
+
+        .hero h1 {
+          font-size: 32px;
+        }
+
+        .service-box {
+          flex-direction: column;
+          align-items: center;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Navbar -->
+
+    <header>
+      <nav class="navbar">
+        <h2 class="logo">DevStudio</h2>
+
+        <ul class="nav-links">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+
+        <button class="btn">Get Started</button>
+      </nav>
+    </header>
+
+    <!-- Hero Section -->
+
+    <section class="hero">
+      <div class="hero-text">
+        <h1>Build Your Digital Future</h1>
+
+        <p>
+          We create modern websites and digital experiences that help businesses
+          grow online.
+        </p>
+
+        <button class="hero-btn">Start Project</button>
+      </div>
+    </section>
+
+    <!-- Services -->
+
+    <section class="services">
+      <h2>Our Services</h2>
+
+      <div class="service-box">
+        <div class="card">
+          <h3>Web Development</h3>
+          <p>Modern and responsive websites using latest technologies.</p>
+        </div>
+
+        <div class="card">
+          <h3>SEO Optimization</h3>
+          <p>Improve your Google ranking and increase traffic.</p>
+        </div>
+
+        <div class="card">
+          <h3>Digital Marketing</h3>
+          <p>Grow your business using social media and marketing strategies.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- About -->
+
+    <section class="about">
+      <div class="about-text">
+        <h2>About Us</h2>
+
+        <p>
+          We are a creative team of developers and marketers helping brands
+          build powerful digital presence.
+        </p>
+      </div>
+    </section>
+
+    <!-- Contact -->
+
+    <section class="contact">
+      <h2>Contact Us</h2>
+
+      <form>
+        <input type="text" placeholder="Your Name" />
+        <input type="email" placeholder="Your Email" />
+        <textarea placeholder="Your Message"></textarea>
+
+        <button>Send Message</button>
+      </form>
+    </section>
+
+    <!-- Footer -->
+
+    <footer>
+      <p>© 2026 DevStudio | All Rights Reserved</p>
+    </footer>
+  </body>
+</html>
